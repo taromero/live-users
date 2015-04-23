@@ -1,0 +1,17 @@
+<template name='live_users'>
+  {{> snapshot_recorder}}
+  <div style='display:inline-block'>
+    <div style='float:left;;margin-right:10px;'>
+      <div>
+        <img class='snapshot {{user.effect}}' height='92' width='116' id='user-snapshot'/>
+      </div>
+      <input type='text' class='form-control' id='nick' placeholder={{user.nick}} style='width:{{picWidth}}'/>
+    </div>
+    {{#each otherUsers}}
+      <div style='float:left;margin-right:10px;'>
+        <img src='{{snapshot}}' class='snapshot {{effect}}' id='{{_id}}' height='{{picHeight}}' width='{{picWidth}}'/>
+        <div>{{nick}}</div>
+      </div>
+    {{/each}}
+  </div>
+</template>
