@@ -1,6 +1,6 @@
 Package.describe({
   name: 'canotto90:live-users',
-  version: '0.0.2',
+  version: '0.0.4',
   summary: 'Show a live snapshot of all users with an active session',
   git: 'https://github.com/taromero/live-users',
   documentation: 'README.md'
