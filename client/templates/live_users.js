@@ -15,10 +15,3 @@ Template.live_users.helpers({
   }
 })
 
-Template.live_users.events({
-  'click #user-snapshot': function() {
-    var currentFilter = Session.get('status.class')
-    var toggleFilter = (!currentFilter ? 'blur' : '')
-    Session.set('status.class', toggleFilter)
-  }
-})
