@@ -1,5 +1,5 @@
 Meteor.methods({
-  setSnapshot: function(snapshot, effect) {
-    return Meteor.users.update(Meteor.userId(), { $set: { snapshot: snapshot } })
+  setSnapshot: function(snapshot) {
+    return Meteor.users.update(Meteor.userId(), { $set: { 'profile.snapshot': snapshot } })
   }
 })

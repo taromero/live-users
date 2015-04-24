@@ -1,14 +1,14 @@
 <template name='live_users'>
   {{> snapshot_recorder}}
   <div style='display:inline-block'>
-    <div style='float:left;;margin-right:10px;'>
+    <div style='float:left;margin-right:10px'>
       <div>
-        <img height='92' width='116' src='{{user.snapshot}}'/>
+        <img height='92' width='116' src='{{user.profile.snapshot}}'/>
       </div>
     </div>
     {{#each otherUsers}}
-      <div style='float:left;margin-right:10px;'>
-        <img src='{{snapshot}}' id='{{_id}}' title='{{profile.name}}'/>
+      <div style='float:left;margin-right:10px'>
+        <img src='{{profile.snapshot}}' id='{{_id}}' title='{{profile.name}}'/>
       </div>
     {{/each}}
   </div>
