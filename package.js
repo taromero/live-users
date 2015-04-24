@@ -1,6 +1,6 @@
 Package.describe({
   name: 'canotto90:live-users',
-  version: '0.0.6',
+  version: '0.0.7',
   summary: 'Show a live snapshot of all users with an active session',
   git: 'https://github.com/taromero/live-users',
   documentation: 'README.md'
@@ -9,6 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2')
   api.use('templating@1.1.0')
+  api.use('mizzao:user-status@0.1.0')
   api.addFiles('server/camera_methods.js', 'server')
   api.addFiles('server/publications.js', 'server')
   api.addFiles('client/lib/camera.js', 'client')
