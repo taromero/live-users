@@ -13,7 +13,9 @@ Camera = {
     Meteor.setInterval(Camera.refreshUserSnapshot, 1000)
   },
   refreshUserSnapshot: function() {
-    var snapshot = Camera.takeSnapshot()
-    Meteor.call('setSnapshot', snapshot)
+    // 1. snapshot is taken and sent to the server.
+    // 2. user's profile gets updated
+    // 3. UI updates image src reactively
+    Meteor.call('setSnapshot', Camera.takeSnapshot())
   }
 }
