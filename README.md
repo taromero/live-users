@@ -1,10 +1,10 @@
 ## live-users
 
-Show a galery of stream of snapshots of current logged users.
+Stream a galery of snapshots for users with active sessions.
 
 ### Usage
 
-Just place `{{> live_users}}` anywhere on a template
+Just place `{{> live_users}}` anywhere on a template.
 
 ### Demo
 

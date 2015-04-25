@@ -1,5 +1,7 @@
 Template.live_users.rendered = function() {
-  Camera.keepUserSnapshotUpdated()
+  if (Meteor.user()) {
+    Camera.keepUserSnapshotUpdated()
+  }
 }
 
 Template.live_users.onCreated(function() {
